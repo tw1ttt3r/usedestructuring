@@ -32,3 +32,13 @@ let persona={
 console.log(persona);
 let {folio:numPersona,nombre,edad:age}=persona;
 console.log(numPersona,nombre,age);
+
+//destructuring parameters function
+function countdown({initial, final, interval}){
+    let current=initial;
+    while(current > final){
+        console.log(current);
+        current -= interval;
+    }
+}
+countdown({initial:10,final:0,interval:1})
