@@ -11,3 +11,14 @@ console.log(a,b);
 [b,a]=[a,b];
 console.log(a,b);
 
+//destructuring objetos
+let objeto={
+    id:1,
+    name:"pedro",
+    active:true
+};
+console.log(objeto);
+
+let {id,name,active} = objeto;
+
+console.log(id,name,active);
