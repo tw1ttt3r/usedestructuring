@@ -42,3 +42,12 @@ function countdown({initial, final, interval}){
     }
 }
 countdown({initial:10,final:0,interval:1})
+
+//destructuring parameters function, assigning value to another variable
+function countdown({initial, final, interval, initial: current}){
+    while(current>final){
+        console.log(current);
+        current-=interval;
+    }
+}
+countdown({initial:20,final:0,interval:2})
