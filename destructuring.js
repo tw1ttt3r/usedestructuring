@@ -51,3 +51,12 @@ function countdown({initial, final, interval, initial: current}){
     }
 }
 countdown({initial:20,final:0,interval:2})
+
+//destructuring parameters with default values
+function countdown({initial:current=20,final=0,interval:interval=1}){
+    while(current>final){
+        console.log(current);
+        current-=interval;
+    }
+}
+countdown({});
